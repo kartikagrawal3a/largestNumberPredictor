@@ -1,0 +1,62 @@
+ <html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<style type="text/css">
+		.div1{
+			max-width: 600px;
+			margin-top: 130px; 
+			background-color: #dcdcdc;
+			border: 3px solid yellow;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		input[type=button]{
+			width: 60px;
+			background-color: #000d1a;
+			color: white;
+			padding-left: 10px;
+			padding-right: 10px;
+			display: inline-block;
+		}
+		input[type=text]{
+			height: 30px;
+		}
+		td{
+			padding: 5px;
+		}
+		body{
+			background-color: #000d1a;
+		}
+	</style>
+	<script type="text/javascript">
+		function cls(){
+			document.f.txt3.type="text";
+			if(document.f.txt1.value>document.f.txt2.value)
+				document.f.txt3.value=document.f.txt1.value;
+			else
+				document.f.txt3.value=document.f.txt2.value;
+		}
+		function cls1(){
+			document.f.txt1.value=document.f.txt2.value=document.f.txt3.value="";
+			}
+	</script>
+</head>
+<body>
+	<div class="div1">
+	<form name="f">
+		<h1 style="text-align: center; font-family: tahoma; color: #000d1a; margin-top: 10px;">Largest Number Predictor</h1>
+		<center><table style="margin-top: 50px;">
+		<tr><td style="padding: 15px 0px;"><label for="txt1" >Enter 1st No.</b></td><td><input type="text" name="txt1" id="txt1" class="form-control"></td></tr>
+		<tr><td style="padding: 15px 0px;"><label for="txt2">Enter 2nd No.</label></td><td><input type="text" name="txt2" id="txt2" class="form-control"> </td></tr>
+		<tr><td style="padding: 15px 0px;"><label for="txt3">Lagest No.</label></td><td><input type="hidden" name="txt3" id="txt3" class="form-control" readonly></td></tr>
+	</table></center><br><br>
+		<center><input type="button" value="Find" onclick="cls();" class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="button" value="Clear" onclick="cls1();" class="form-control"></center>
+
+
+	</form>
+</div>
+</body>
+</html>
